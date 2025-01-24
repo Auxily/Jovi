@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
         body {
@@ -10,29 +12,18 @@
             background-color: #84dfe9;
         }
 
-      header {
-    background-image: url('https://github.com/Auxily/Jovi/blob/862524dbe3a22d003e950bcee97ae744ef84e01b/gifgit.gif'); /* Add the path to your GIF here */
-    background-size: cover; /* Ensures the GIF covers the entire header */
-    background-position: center center; /* Aligns the GIF properly */
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-    position: relative; /* Keeps profile picture properly placed */
-}
+        header {
+            background-image: url('https://github.com/Auxily/Jovi/blob/862524dbe3a22d003e950bcee97ae744ef84e01b/gifgit.gif'); /* Path to your GIF */
+            background-size: cover; /* Ensures the GIF covers the entire header */
+            background-position: center center; /* Aligns the GIF properly */
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
 
         .header-content h1 {
             font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
         }
 
         nav {
@@ -94,10 +85,9 @@
     </style>
 </head>
 <body>
+
     <header>
         <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="./pic.jpg" alt="Your Profile Picture" class="profile-picture">
             <h1>AUXILY JOVITA</h1>
             <p>ASSISTANT PROFESSOR</p>
         </div>
@@ -110,24 +100,23 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Papers published</a></li>
             <li><a href="#resume">Resume</a></li>
-           
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>Professonal Summary</h2>
-            <p>I'm a <b>Experienced and dedicated  </b>Assistant Professor in Department of Computer Science with 13 years of teaching and research experience. Committed to fostering an engaging learning environment and developing innovative methodologies to ensure student success. Skilled in database management systems, software testing, and data science with a strong background in visual programming and multimedia systems.</p>
+            <p>I'm a <b>Experienced and dedicated</b> Assistant Professor in the Department of Computer Science with 13 years of teaching and research experience. Committed to fostering an engaging learning environment and developing innovative methodologies to ensure student success. Skilled in database management systems, software testing, and data science with a strong background in visual programming and multimedia systems.</p>
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
             <h2>Education</h2>
-            <p> Ph.D. in Computer Science -Annamalai University </p>
+            <p> Ph.D. in Computer Science - Annamalai University </p>
             <p> Master of Philosophy in Computer Science - Madurai Kamaraj University </p>
             <p> Master's in Computer Science - Madurai Kamaraj University </p>
-            <p> Bachelor's in Mathematics  - Manonmamiam Sundaranar University </p>
+            <p> Bachelor's in Mathematics - Manonmamiam Sundaranar University </p>
         </div>
     </section>
 
@@ -135,11 +124,10 @@
         <div class="section-content">
             <h2>Skills</h2>
             <ul>
-                
-                <li> c & c++</li>
+                <li>c & c++</li>
                 <li>Python</li>
-                <li>java</li>
-                <li>Java script</li>
+                <li>Java</li>
+                <li>JavaScript</li>
                 <li>Internet of Things</li>
                 <li>Cloud Computing</li>
             </ul>
@@ -148,26 +136,23 @@
 
     <section id="projects">
         <div class="section-content">
-            <h2>Papers Published </h2>
+            <h2>Papers Published</h2>
             <ul>
                 <li><a href="#">SOAP And XMPP Based An Integrated Framework For Enhancing Communication Performance Of Iot Applications</a></li>
                 <li><a href="#">Secure Data Communication in Iot Supported Social Networking System Using REST API and JSON Web Token</a></li>
-                <li><a href="#">IBM chetbot</a></li>
-                <li><a href="#">chetbot</a></li> 
-                <!-- Add more project links here -->
+                <li><a href="#">IBM Chatbot</a></li>
+                <li><a href="#">Chatbot</a></li>
             </ul>
         </div>
     </section>
 
     <section id="resume">
-    
         <div class="section-content">
             <center>
-            <h2>Resume</h2>
-            <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
+                <h2>Resume</h2>
+                <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
+            </center>
         </div>
-        
     </section>
 
     <footer>
@@ -175,7 +160,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling to section when clicking on navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
