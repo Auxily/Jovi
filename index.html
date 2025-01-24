@@ -11,9 +11,9 @@
         }
 
         header {
-            background-image: url('https://github.com/Auxily/Jovi/blob/244b1033a2566762460d0a2b88e4ec14db819af8/gifgit.gif'); /* Path to your GIF */
-            background-size: cover;
-            background-position: center center;
+            background-image: url('./assets/images/your-gif.gif'); /* Path to your GIF */
+            background-size: cover; /* Ensures the GIF covers the entire header */
+            background-position: center center; /* Aligns the GIF properly */
             color: #fff;
             text-align: center;
             padding: 2rem 0;
@@ -55,40 +55,11 @@
             color: #fff;
         }
 
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
         footer {
             text-align: center;
             padding: 1rem 0;
             background-color: #333;
             color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
         }
     </style>
 </head>
@@ -111,78 +82,8 @@
         </ul>
     </nav>
 
-    <section id="about">
-        <div class="section-content">
-            <h2>Professonal Summary</h2>
-            <p>I'm a <b>Experienced and dedicated</b> Assistant Professor in Department of Computer Science with 13 years of teaching and research experience...</p>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p> Ph.D. in Computer Science - Annamalai University </p>
-            <p> Master of Philosophy in Computer Science - Madurai Kamaraj University </p>
-            <p> Master's in Computer Science - Madurai Kamaraj University </p>
-            <p> Bachelor's in Mathematics - Manonmamiam Sundaranar University </p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>c & c++</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>Internet of Things</li>
-                <li>Cloud Computing</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>Papers Published</h2>
-            <ul>
-                <li><a href="#">SOAP And XMPP Based An Integrated Framework For Enhancing Communication Performance Of Iot Applications</a></li>
-                <li><a href="#">Secure Data Communication in Iot Supported Social Networking System Using REST API and JSON Web Token</a></li>
-                <li><a href="#">IBM Chatbot</a></li>
-                <li><a href="#">Chatbot</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="resume">
-        <div class="section-content">
-            <center>
-                <h2>Resume</h2>
-                <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
-            </center>
-        </div>
-    </section>
-
     <footer>
         <p>&copy; 2023 VIGNESH M</p>
     </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
