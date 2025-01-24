@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
         body {
@@ -11,7 +13,7 @@
         }
 
         header {
-            background-image: url('https://github.com/Auxily/Jovi/blob/862524dbe3a22d003e950bcee97ae744ef84e01b/gifgit.gif'); /* Path to your GIF */
+            background-image: url('https://github.com/Auxily/Jovi/blob/862524dbe3a22d003e950bcee97ae744ef84e01b/gifgit.gif.gif'); /* Replace with your GIF URL */
             background-size: cover; /* Ensures the GIF covers the entire header */
             background-position: center center; /* Aligns the GIF properly */
             color: #fff;
@@ -22,16 +24,6 @@
 
         .header-content h1 {
             font-size: 2.5rem;
-        }
-
-        .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 75%;
-            object-fit: cover;
-            position: absolute;
-            top: 75px;
-            left: 75px;
         }
 
         nav {
@@ -55,18 +47,47 @@
             color: #fff;
         }
 
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
         footer {
             text-align: center;
             padding: 1rem 0;
             background-color: #333;
             color: #fff;
         }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <div class="header-content">
-            <img src="./pic.jpg" alt="Your Profile Picture" class="profile-picture">
             <h1>AUXILY JOVITA</h1>
             <p>ASSISTANT PROFESSOR</p>
         </div>
@@ -82,8 +103,78 @@
         </ul>
     </nav>
 
+    <section id="about">
+        <div class="section-content">
+            <h2>Professonal Summary</h2>
+            <p>I'm a <b>Experienced and dedicated</b> Assistant Professor in the Department of Computer Science with 13 years of teaching and research experience. Committed to fostering an engaging learning environment and developing innovative methodologies to ensure student success. Skilled in database management systems, software testing, and data science with a strong background in visual programming and multimedia systems.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p> Ph.D. in Computer Science - Annamalai University </p>
+            <p> Master of Philosophy in Computer Science - Madurai Kamaraj University </p>
+            <p> Master's in Computer Science - Madurai Kamaraj University </p>
+            <p> Bachelor's in Mathematics - Manonmamiam Sundaranar University </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>c & c++</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Internet of Things</li>
+                <li>Cloud Computing</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Papers Published</h2>
+            <ul>
+                <li><a href="#">SOAP And XMPP Based An Integrated Framework For Enhancing Communication Performance Of Iot Applications</a></li>
+                <li><a href="#">Secure Data Communication in Iot Supported Social Networking System Using REST API and JSON Web Token</a></li>
+                <li><a href="#">IBM Chatbot</a></li>
+                <li><a href="#">Chatbot</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2>Resume</h2>
+                <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2023 VIGNESH M</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
